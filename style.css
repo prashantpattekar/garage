@@ -1,0 +1,174 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+header img{
+   margin-left: 50px; 
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin-right: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.hero {
+    background-image: url('/images/hero.jpg');
+    /* background-color: black; */
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p{
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    margin-top: 20px;
+    position: relative;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.services {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 1rem;
+}
+
+.services .service {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services img {
+    max-width: 200px;
+    margin-right: 1rem;
+}
+
+.about {
+    background-color: #f5f5f5;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 1rem;
+}
+
+.about img {
+    max-width: 200px;
+    margin-top: 1rem;
+}
+
+.testimonials {
+    background-color: #f5f5f5;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 1rem;
+}
+
+.testimonials .testimonial {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials img {
+    max-width: 100px;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.contact-us {
+    background-color: #f5f5f5;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+}
